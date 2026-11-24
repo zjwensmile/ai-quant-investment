@@ -1,0 +1,28 @@
+{
+  "snapshot_id": "example-2026-08-23-premarket",
+  "as_of_time": "2026-08-23T08:30:00+08:00",
+  "account": {
+    "version": "example-account-v1",
+    "cash": 50000.0,
+    "positions": []
+  },
+  "market": {
+    "session": "pre_market",
+    "indices": [],
+    "breadth": null,
+    "turnover": null
+  },
+  "events": [],
+  "candidates": {
+    "HOLDINGS": [],
+    "QUALITY_VALUE": [],
+    "DEFENSIVE": [],
+    "TACTICAL": []
+  },
+  "data_quality": {
+    "status": "example_only",
+    "warnings": [
+      "This fixture is for pipeline verification and must not produce a real trade."
+    ]
+  }
+}

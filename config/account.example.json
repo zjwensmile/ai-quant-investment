@@ -1,0 +1,14 @@
+{
+  "version": "example-account-v1",
+  "source": "example_template",
+  "capital_budget": 50000.0,
+  "cash": null,
+  "cash_status": "not_reported",
+  "permissions": {
+    "sse_main_board": false,
+    "szse_main_board": false,
+    "etf": false,
+    "risk_warning_stocks": false
+  },
+  "positions": []
+}

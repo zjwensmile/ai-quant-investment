@@ -1,0 +1,30 @@
+{
+  "codex_command": "codex",
+  "max_parallel_agents": 2,
+  "real_trading_enabled": false,
+  "agent_timeout_seconds": 900,
+  "commission_minimum": 1,
+  "commission_rate": null,
+  "commission_fixed_per_order": 1,
+  "stock_sell_stamp_duty_rate": 0.0005,
+  "risk_warning_permission": false,
+  "exclude_risk_warning_securities": true,
+  "simulation_all_or_none": true,
+  "simulation_buy_at_limit_up": false,
+  "simulation_sell_at_limit_down": false,
+  "market_data_max_age_seconds": 300,
+  "chanlun_bridge_path": "rust/chanlun_bridge/target/release/chanlun_bridge.exe",
+  "chanlun_mode": "active",
+  "shadow_execution_model": "next-session-open-v1-provisional",
+  "shadow_acceptance_days": null,
+  "schedule": {
+    "enabled": false,
+    "timezone": "Asia/Shanghai",
+    "tasks": [
+      {"name": "premarket", "time": "08:45", "workflow": "analyze"},
+      {"name": "intraday_1000", "time": "10:00", "workflow": "analyze"},
+      {"name": "closing_watch", "time": "14:45", "workflow": "analyze"},
+      {"name": "postmarket", "time": "15:20", "workflow": "close"}
+    ]
+  }
+}
