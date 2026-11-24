@@ -1,0 +1,41 @@
+# Local data and account configuration
+runtime/
+config/*.json
+!config/*.example.json
+.env
+.env.*
+!.env.example
+.codex/
+auth.json
+*.pem
+*.key
+*.p12
+*.pfx
+*.sqlite*
+*.db
+*.db-*
+*.log
+# Python environments and build output
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+build/
+dist/
+# Rust local binaries and toolchains
+target/
+rust/.cargo/
+rust/.toolchain/
+# Private working material and presentations
+work/
+outputs/
+*.pptx
+*.zip
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
